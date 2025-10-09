@@ -222,7 +222,7 @@ button {
 .header_section {
   width: 100%;
   float: left;
-  background-image: url(../images/banner-bgNEW.jpg);
+  background-image: url(../images/Company-pana.svg);
   height: auto;
   background-size: 100%;
 }
@@ -237,7 +237,7 @@ button {
 
 /* Optional: make navbar text pop more */
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #fcca1c; /* honey yellow */
+  color: #786d48; /* honey yellow */
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -280,6 +280,7 @@ button {
   float: left;
   padding-left: 40px;
 }
+
 /* header section end */
 
 /* banner section start */
@@ -292,7 +293,10 @@ button {
 .banner_main {
   width: 44%;
   float: left;
-  background: #fff;
+  /* semi-transparent version of #FDFAEC so the background shows through */
+  background-color: rgba(253, 250, 236, 0.8);
+  /* subtle blur to help text stand out against busy backgrounds */
+  backdrop-filter: blur(2px);
   padding: 40px;
 }
 
@@ -300,7 +304,7 @@ button {
   width: 100%;
   float: left;
   font-size: 48px;
-  color: #e7c95b;
+  color: #564b25;
   font-weight: bold;
 }
 .banner_text {
@@ -1224,3 +1228,4 @@ textarea#comment::placeholder {
   color: #ff8c00; /* warm orange for hover and active */
   text-shadow: 0 0 6px rgba(255, 190, 0, 0.6);
 }
+
