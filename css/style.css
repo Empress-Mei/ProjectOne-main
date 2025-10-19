@@ -459,6 +459,9 @@ button {
   width: 170px;
   float: right;
   padding-top: 64px;
+  /* make sure the button is above any positioned overlays so it's clickable */
+  position: relative;
+  z-index: 1102;
 }
 .read_bt a {
   width: 100%;
@@ -471,6 +474,9 @@ button {
   font-family: "Roboto", sans-serif;
   border-radius: 10px;
   transition: box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1103; 
+  pointer-events: auto; 
 }
 .read_bt a:hover {
   color:#442904;
